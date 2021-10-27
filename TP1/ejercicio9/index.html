@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="botones.php" method="GET">
+        <label >Hombre</label>
+        <input type="radio" name="genero" value="Hombre">
+        <label >Mujer</label>
+        <input type="radio" name="genero" value="Mujer">
+        <br>
+        
+        <p>Elija pais</p>
+        <select name="paises">
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="mexico">Mexico</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>Verdadero</th>
+                    <th>Falso</th>
+                    <th>a</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr> 
+                    <td><input type="checkbox" name="opciones[]" value="verdadero"></td>
+                    <td><input type="checkbox" name="opciones[]" value="falso"></td>
+                    <td><input type="checkbox" name="opciones[]" value="a"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <input type="submit" value="enviar">
+       
+    </form>
+</body>
+</html>
