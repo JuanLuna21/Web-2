@@ -14,7 +14,7 @@ function ShowHome(){
 <body>
     <a href="pi">Pi</a>
     <a href="about">about</a>
-    <form action="operaciones" method="get">
+    <form action="operaciones" method="post">
 
         <input type="number" name="op1" placeholder="">
 

@@ -23,21 +23,21 @@ switch ($params[0]) {
         }
         break;
     case 'operaciones':
-        switch ($_GET['operacion']) {
+        switch ($_POST['operacion']) {
             case 'sumar':
-                $resultado = sumar($_GET['op1'], $_GET['op2']);
+                $resultado = sumar($_POST['op1'], $_POST['op2']);
                 echo ($resultado);
                 break;
             case 'restar':
-                $resultado =restar($_GET['op1'],  $_GET['op2']);
+                $resultado =restar($_POST['op1'],  $_POST['op2']);
                 echo ($resultado);
                 break;
             case 'multiplicar':
-                $resultado = multiplicar($_GET['op1'], $_GET['op2']);
+                $resultado = multiplicar($_POST['op1'], $_POST['op2']);
                 echo ($resultado);
                 break;
             case 'dividir':
-                $resultado = dividir($_GET['op1'], $_GET['op2']);
+                $resultado = dividir($_POST['op1'], $_POST['op2']);
                 echo ($resultado);
                 break;
             default:
