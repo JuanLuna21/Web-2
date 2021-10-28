@@ -14,10 +14,11 @@ switch ($params[0]) {
     case 'home':
       ShowHome();
         break;
-    case 'tablamultiplicar':
-        tablamultiplicar($_GET['num']);
+    case 'tabla':
+        tablamultiplicar($_POST['num']);
         break;
     default:
         echo'error';
         break;
 }
+

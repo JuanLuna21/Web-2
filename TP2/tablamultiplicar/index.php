@@ -14,7 +14,7 @@ echo'
     
     <h1>Multiplication table.</h1>
 
-    <form action="tablamultiplicar" method="POST">
+    <form action="tabla" method="POST">
     
     <input type="number" name="num" placeholder="Enter the number of the table you want">
 
