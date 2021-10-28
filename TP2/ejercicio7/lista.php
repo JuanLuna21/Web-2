@@ -12,7 +12,7 @@ echo
 foreach($figuras->getAll() as $figura) {
     echo "<li>" . 
             $figura->ToString() . 
-            " | <a href='verFigura/" . $figura->getId() . "'>VER </a>" .
+            " | <a href='verFigura/". $figura->getId() . "'>VER </a>" .
          "</li>";
 }
 

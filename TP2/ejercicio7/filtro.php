@@ -13,7 +13,7 @@ echo "Las figuras con area menor a $area son:<ul>";
 foreach($figuras->getBy(new AreaFilter($area)) as $figura) {
     echo "<li>" . 
             $figura->ToString() . 
-            " | <a href='verFigura.php?id=". $figura->getId() . "'>VER </a>" .
+            " | <a href='verFigura/" . $figura->getId() . "'>VER </a>"; 
          "</li>";
 }
 echo "

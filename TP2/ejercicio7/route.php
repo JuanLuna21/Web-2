@@ -20,11 +20,11 @@ switch ($params[0]) {
         lista();
         break;
     case 'filtro':
-        filtro($params[1]);
+        filtro($_GET['area']);
         break;
-    case 'verFigura':
-        verFigura($params[1]);
-        break;
+        case 'verFigura':
+            verFigura($params[1]);
+            break;
     default:
         echo 'error';
         break;
