@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="css/style.css">
 <?php
 
-function tablamultiplicar(){
+function tablamultiplicar($num){
 
-    $num = $_POST['num'];
+    $num = $_GET['num'];
     
     echo "<table class='table'>";
     

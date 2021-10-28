@@ -2,8 +2,8 @@
 require_once 'index.php';
 require_once 'tablamultiplicar.php';
 
-if (!empty($_POST['num'])) {
-    $action = $_POST['num'];
+if (!empty($_GET['num'])) {
+    $action = $_GET['num'];
 } else {
     $action = 'home';
 }
@@ -15,7 +15,7 @@ switch ($params[0]) {
       ShowHome();
         break;
     case 'tablamultiplicar':
-        tablamultiplicar();
+        tablamultiplicar($_GET['num']);
         break;
     default:
         echo'error';
