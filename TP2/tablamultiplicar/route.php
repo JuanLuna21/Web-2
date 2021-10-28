@@ -2,8 +2,8 @@
 require_once 'index.php';
 require_once 'tablamultiplicar.php';
 
-if (!empty($_GET['num'])) {
-    $action = $_GET['num'];
+if (!empty($_GET['action'])) {
+    $action = $_GET['action'];
 } else {
     $action = 'home';
 }

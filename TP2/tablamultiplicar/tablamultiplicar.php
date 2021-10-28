@@ -2,8 +2,6 @@
 <?php
 
 function tablamultiplicar($num){
-    
-    var_dump($num);
 
     echo "<table class='table'>";
     
@@ -12,7 +10,7 @@ function tablamultiplicar($num){
             echo "<tr>";
             for ($j=1; $j < ($num+1); $j++) { 
                 if((($i==$j) || ($i == 1)) || ($j == 1)) {
-                    echo "<td class='resaltado'>". $i*$j."</td> "; //
+                    echo "<td class='resaltado'>". $i*$j."</td> "; 
                 }
                 else{
                     echo "<td>". $i*$j . "</td>";
