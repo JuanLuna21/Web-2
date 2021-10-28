@@ -36,7 +36,7 @@ else{
             ";
         }
         
-        echo  "<a href='http://localhost/web2/tp1/ejer8/'>Atras</a>";
+        echo  "<a href='http://localhost/practice/TP2/ejercicio5/'>Atras</a>";
         echo "</ul>";
     
     }

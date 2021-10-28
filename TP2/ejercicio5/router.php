@@ -10,6 +10,8 @@ if (!empty($_GET['action'])) {
     $action = 'home';
 }
 
+define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
+
 $params  = explode('/',$action);
 
 switch ($params[0]) {
@@ -21,13 +23,13 @@ switch ($params[0]) {
         }
         break;
     case 'sumar': 
-        suma($params[1], $params[2], $params[0]); 
+        ShowOperacion($params[1], $params[2]); 
         break;
     case 'dividir': 
-        dividir($params[1], $params[2], $params[0]);
+        ShowOperacion($params[1], $params[2]);
         break;
     case 'restar': 
-        restar($params[1], $params[2], $params[0]);
+        ShowOperacion($params[1], $params[2]);
         break;
     case 'pi': 
         showPi(); 
