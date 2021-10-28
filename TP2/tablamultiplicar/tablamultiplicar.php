@@ -2,9 +2,9 @@
 <?php
 
 function tablamultiplicar($num){
-
-    $num = $_GET['num'];
     
+    var_dump($num);
+
     echo "<table class='table'>";
     
     echo"<tbody>";
