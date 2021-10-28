@@ -16,7 +16,7 @@ function ShowHome(){
     <a href="about">about</a>
     <form action="operaciones" method="get">
 
-            <input type="number" name="op1" placeholder="">
+        <input type="number" name="op1" placeholder="">
 
         <select name="operacion">
 

@@ -1,7 +1,5 @@
 <?php
 
-function ShowOperacion(){
-
   function sumar($a, $b){
       return $a + $b;
   }
@@ -19,5 +17,5 @@ function ShowOperacion(){
           return $a / $b;
       }
   }
-}
+
 

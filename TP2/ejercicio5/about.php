@@ -4,8 +4,8 @@ function ShowAbout (){
 
 $desarrolladores = array(
     "Gonzalo" => "Primera descripcion.",
-    "segunda persona" => "Segunda descripcion.",
-    "tercera persona" => "Tercera descripcion.",
+    "Juan" => "Segunda descripcion.",
+    "Fede" => "Tercera descripcion.",
 );
 if(isset($_GET['desarrollador'])){
     $desarrollador = $_GET['desarrollador'];
@@ -19,7 +19,7 @@ if(isset($_GET['desarrollador'])){
 
     echo "<h1>Acerca de $desarrollador</h1>";
     echo "<p>$desc</p>";
-    echo  "<a href='about.php'>Atras</a>";
+    echo  "<a href='about'>Atras</a>";
 
 }
 else{
@@ -29,7 +29,7 @@ else{
         foreach ($desarrolladores as  $clave => $valor) {
             echo "
                 <li>
-                    <a href='about.php?desarrollador=$clave'>
+                    <a href='desarrollador/$clave'>
                         $clave
                     </a>
                 </li>
