@@ -14,7 +14,7 @@ function ShowHome(){
 <body>
     <a href="pi">Pi</a>
     <a href="about">about</a>
-    <form action="router.php" method="get">
+    <form action="operaciones" method="get">
 
             <input type="number" name="op1" placeholder="">
 

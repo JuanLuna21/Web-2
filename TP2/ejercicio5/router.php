@@ -22,13 +22,13 @@ switch ($params[0]) {
             showAbout(); 
         }
         break;
-    case 'sumar': 
+    case 'operaciones': 
         ShowOperacion($params[1], $params[2]); 
         break;
     case 'dividir': 
         ShowOperacion($params[1], $params[2]);
         break;
-    case 'restar': 
+    case 'operaciones': 
         ShowOperacion($params[1], $params[2]);
         break;
     case 'pi': 
