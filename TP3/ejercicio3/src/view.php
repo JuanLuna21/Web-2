@@ -9,13 +9,19 @@ function ShowHome()
     $sentencia->execute();
     $pagos = $sentencia->fetchAll(PDO::FETCH_OBJ);
     return $pagos;
+    $lista= [];
 
+    foreach ($pagos as $pago) {
+    
+        $lista[]=$pago;
+    
+    }
     
     $smarty = new Smarty();
     
     $smarty->assign('titulo','lista de pagos');
     
-    $smarty->assign('pago', $pagos);
+    $smarty->assign('pago', $lista);
     
     $smarty->display('templates/home.tpl');
 

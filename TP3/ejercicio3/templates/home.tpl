@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    {foreach from=$pagos item=$pago}
-    <tr>
-        <td>{$pago->deudor}</td>
-        <td>{$pago->cuota}</td>
-        <td>{$pago->cuota_capital}</td>
-        <td>{$pago->fecha_pago}</td>
-    </tr>
-</tbody>
+<p>asdasdsad</p>
 
+{foreach from=$lista item=$pago}
+
+    <ul>
+        <li>{$pago->deudor}</li>
+        <li>{$pago->cuota}</li>
+        <li>{$pago->cuota_capital}</li>
+        <li>{$pago->fecha_pago}</li>
+    </ul>
 {/foreach}
+
 </body>
 </html>
