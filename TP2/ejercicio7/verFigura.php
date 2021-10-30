@@ -6,7 +6,7 @@ function verFigura($id){
 $figuras = new Figuras();
 
 // obtiene la figura según el ID pasado como parámetro
-$id = $_GET['id'];
+
 $figura = $figuras->get($id);
 
 // imprime el detalle de la figura
