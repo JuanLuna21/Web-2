@@ -31,7 +31,7 @@ class modelMaterias
     function editarMaterias($id,$nombre,$profesor,$carrera)
     {
         $sentencia = $this->db->prepare("UPDATE  materias SET (nombre=?, profesor=?,carrera=? WHERE id_materia=? )");
-        $sentencia->execute(array($id,$nombre,$profesor,$carrera));
+        $sentencia->execute(array($nombre,$profesor,$carrera,$id));
 
     }
 }
