@@ -22,7 +22,7 @@
 			<td>{$materia->id_materia}</td>
 			<td>{$materia->nombre}</td>
             <td>{$materia->profesor}</td>
-            <td><a href="{BASE_URL}editarMaterias/{$materia->id_materia}">Editar</a></td>
+            <td><a href="{BASE_URL}edite/{$materia->id_materia}">Editar</a></td>
         </tr>
     </tbody>
     {{/foreach}}
