@@ -23,6 +23,8 @@
 			<td>{$materia->nombre}</td>
             <td>{$materia->profesor}</td>
             <td><a href="{BASE_URL}edite/{$materia->id_materia}">Editar</a></td>
+            <td><a href="{BASE_URL}delete/{$materia->id_materia}">Eliminar</a></td>
+
         </tr>
     </tbody>
     {{/foreach}}
@@ -42,7 +44,25 @@
         <input type="submit" value="Enviar">
         
 </form>
- 
-    
+
+<h3>Listar materia seleccionada</h3>
+<form action="materia" method="post">
+        <input type="text" placeholder="materia" name="materia">
+        <input type="submit" value="mostrar">
+        
+</form>
+
+<h3>Listar carrera seleccionada</h3>
+<form action="carrera" method="post">
+        <input type="text" placeholder=" carrera" name="carrera">
+        <input type="submit" value="mostrar">
+        
+</form>
+
+<h3>Mostrar Carreras Menor a 3 años.</h3>
+<form action="mostrarCarreras" method="post">
+        <input type="submit" value="mostrar">
+        
+</form>
 </body>
 </html>

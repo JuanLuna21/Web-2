@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-08 23:59:51
+/* Smarty version 3.1.39, created on 2021-11-09 22:54:37
   from 'C:\xampp\htdocs\Practice\TP3\ejercicio5\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6189abe7a31f82_27204476',
+  'unifunc' => 'content_618aee1d2d3d41_94273274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '769eba89197b3403b19f16bd533e3920db4b0bd8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Practice\\TP3\\ejercicio5\\templates\\home.tpl',
-      1 => 1636412387,
+      1 => 1636494876,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6189abe7a31f82_27204476 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618aee1d2d3d41_94273274 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,6 +56,10 @@ $_smarty_tpl->tpl_vars['materia']->do_else = false;
             <td><a href="<?php echo BASE_URL;?>
 edite/<?php echo $_smarty_tpl->tpl_vars['materia']->value->id_materia;?>
 ">Editar</a></td>
+            <td><a href="<?php echo BASE_URL;?>
+delete/<?php echo $_smarty_tpl->tpl_vars['materia']->value->id_materia;?>
+">Eliminar</a></td>
+
         </tr>
     </tbody>
     <?php ob_start();
@@ -80,8 +84,26 @@ echo $_prefixVariable1;?>
         <input type="submit" value="Enviar">
         
 </form>
- 
-    
+
+<h3>Listar materia seleccionada</h3>
+<form action="materia" method="post">
+        <input type="text" placeholder="materia" name="materia">
+        <input type="submit" value="mostrar">
+        
+</form>
+
+<h3>Listar carrera seleccionada</h3>
+<form action="carrera" method="post">
+        <input type="text" placeholder=" carrera" name="carrera">
+        <input type="submit" value="mostrar">
+        
+</form>
+
+<h3>Mostrar Carreras Menor a 3 años.</h3>
+<form action="mostrarCarreras" method="post">
+        <input type="submit" value="mostrar">
+        
+</form>
 </body>
 </html><?php }
 }

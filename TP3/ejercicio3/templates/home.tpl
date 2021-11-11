@@ -18,6 +18,7 @@
         <td><a href="delete/{$pago->id_deudor}">eliminar</a></td>
         <td><a href="ver/{$pago->id_deudor}">VerDeudor</a></td>
         <td><a href="{BASE_URL}editform/{$pago->id_deudor}">Editar</a></td>
+        <td><a href="{BASE_URL}delete/{$pago->id_deudor}">Eliminar</a></td>
     </ul>
 {/foreach}
 

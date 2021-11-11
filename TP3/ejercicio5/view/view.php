@@ -27,6 +27,17 @@ class ViewMaterias
         $this->smarty->display('templates/update.tpl');
     }
 
+    function mostrarMateria($materia){
+        $this->smarty->assign('materias', $materia);
+        $this->smarty->display('templates/materia.tpl');
+    }
+
+    function mostrarCarrera($carrera){
+        $this->smarty->assign('carreras', $carrera);
+        $this->smarty->display('templates/carreraselecionada.tpl');
+    }
+
+
 
     function ShowHome(){
         header("Location: ".BASE_URL."home");
